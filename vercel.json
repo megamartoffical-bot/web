@@ -1,0 +1,26 @@
+{
+<<<<<<< HEAD
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "cache": false
+  }
+}
+=======
+    "version": 2,
+    "builds": [
+      {
+        "src": "dist/app/server.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/dist/app/server.js"
+      }
+    ]
+  }
+  
+>>>>>>> e312093edd01a93925bc35dac3805b5b0a08de08
